@@ -1,4 +1,6 @@
 .page {
+  background-color: #2A2C2F;
+  color: #FFFFFF;
   margin: 0;
   display: grid;
 }
