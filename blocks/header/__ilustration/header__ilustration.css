@@ -1,12 +1,14 @@
 .header__ilustration {
     margin: 0;
     max-width: 984px;
-    padding: 0 148px;
+    width: 100%;
+    padding: 0;
     background-size: contain;
     
     background-position: center;
     background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 1279px) {
     .header__ilustration {
         width: calc(100% - (48px * 2));
