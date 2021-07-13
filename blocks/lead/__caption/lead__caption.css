@@ -1,7 +1,9 @@
 .lead__caption {
     /* align-self нужен для прижатия этого элемента влево */
-    width: 100%;
-
+    align-self: flex-start;
+    box-sizing: border-box;
+    
+    padding: 8px 148px 92px;
     text-align: left;
     margin: 0;
     font-size: 10px;
@@ -11,4 +13,24 @@
     letter-spacing: 1.5px;
     text-align: left;
 }
+
+@media screen and (max-width: 1279px) {
+    .lead__caption {
+        padding: 8px 48px 92px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .lead__caption {
+        padding: 8px 24px 88px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .lead__caption {
+        padding: 6px 16px 64px;
+    }
+}
+
 

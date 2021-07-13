@@ -1,17 +1,22 @@
 .logo {
     margin: 0;
-    padding-top: 28px;   
+    padding: 28px 0 0 48px;  
     display: block;    
     background-repeat: no-repeat;
     background-size: contain;
     width: 176px;
     height: 52px;
 }
+@media screen and (max-width: 1023px) {
+    .logo {
+        padding: 28px 0 0 24px;  
+    }
+}
 
 @media screen and (max-width: 767px) {
     .logo {
+        padding: 16px 0 0 16px;  
         width: 142px;
         height: 42px;
-        padding-top:16px;
     }
 }
