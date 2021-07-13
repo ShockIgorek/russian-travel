@@ -1,7 +1,17 @@
 .logo {
-    background-image: url(../../images/__logo.svg);
+    margin: 0;
+    padding-top: 28px;   
+    display: block;    
     background-repeat: no-repeat;
     background-size: contain;
     width: 176px;
     height: 52px;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 142px;
+        height: 42px;
+        padding-top:16px;
+    }
 }

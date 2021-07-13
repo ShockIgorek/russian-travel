@@ -1,4 +1,8 @@
 .place__image {
+    grid-area: 'photo';
+    margin: 0;
+    width: 100%;
+    grid-area: 'image';
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,0 +1,23 @@
+.cover__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-position: top center;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../../../images/compression/__background.jpg);
+    background-size: 100% 100%;
+    
+    background-blend-mode: multiply;
+    transition: background-color .4s ease;
+}
+
+/* сильно не ругайтесь */
+.cover__link:hover {
+    background-color: rgba(0, 0, 0, .7); 
+}
+

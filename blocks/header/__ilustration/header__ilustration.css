@@ -1,15 +1,15 @@
-.header__ilustration{
-    width: 984px;
-    height: 615px;
-    background-image: url(../../../images/compression/kalegin-michail-179870-unsplash.jpg);
-    background-size: contain;
+.header__ilustration {
+    margin: 0;
+
+    width: 100%;
+    background-size: cover;
+    
     background-position: center;
     background-repeat: no-repeat;
-
-
-    transition-duration: .5s;
 }
-
-.header__ilustration:hover {
-    background-image: url(../../../images/header__hover.jpg);
+/* игнорирование отступов с двух сторон */
+@media screen and (max-width: 1279px) {
+    .header__ilustration {
+        max-width: calc(100% + (24px * 2));
+    }
 }
