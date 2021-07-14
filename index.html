@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>russian-travel</title>
+  <title>Путешествие по России</title>
   <meta name="keywords" content="html, css">
   <meta name="author" content="Шокин Игорь">
 </head>
@@ -14,14 +14,18 @@
 <body class="page">
   <header class="header">
     <img src="./images/__logo.svg" alt="Логотип России" class="logo">
-    <div class="header__lang">
-      <a class="header__lang-link link" href="#">
-        Ru
-      </a>
-      <a class="header__lang-link link" href="#">
-        En
-      </a>
-    </div>
+    <ul class="header__lang">
+      <li class="header__lang-link header__lang-link_on">
+        <a class="link" href="#">
+          Ru
+        </a>
+      </li>
+      <li class="header__lang-link">
+        <a class="link" href="#">
+          En
+        </a>
+      </li>
+    </ul>
   </header>
   <main>
     <section class="lead">
@@ -31,10 +35,12 @@
       <p class="lead__subtitle">
         Настоящая страна не в выпусках новостей, а здесь.
       </p>
-      <img src="./images/header__hover.jpg" alt="Девушка спит в поезде" class="header__ilustration">
-      <p class="lead__caption">
-        ваша полка — верхняя
-      </p>
+      <figure class="lead__figure">
+        <img src="./images/header__hover.jpg" alt="Девушка спит в поезде" class="lead__ilustration">
+        <figcaption class="lead__caption">
+          ваша полка — верхняя
+        </figcaption>
+      </figure>
     </section>
     <section class="intro">
       <h2 class="intro__title">
@@ -55,24 +61,39 @@
       </p>
       <ul class="intro__list">
         <li class="intro__list-item">
-          Часовых поясов 11
+          Часовых поясов
+          <span class="intro__span-accent">
+            11
+          </span>
         </li>
         <li class="intro__list-item">
-          Объектов природного наследия ЮНЕСКО 12
+          Объектов природного наследия ЮНЕСКО
+          <span class="intro__span-accent">
+            12
+          </span>
         </li>
         <li class="intro__list-item">
-          Объектов культурного наследия ЮНЕСКО 16
+          Объектов культурного наследия ЮНЕСКО
+          <span class="intro__span-accent">
+            16
+          </span>
         </li>
         <li class="intro__list-item">
-          Природных заповедников 105
+          Природных заповедников
+          <span class="intro__span-accent">
+            105
+          </span>
         </li>
         <li class="intro__list-item">
-          Аэропортов 241
+          Аэропортов
+          <span class="intro__span-accent">
+            241
+          </span>
         </li>
       </ul>
     </section>
-    <section>
-      <ul class="photo list">
+    <section class="photo">
+      <ul class="photo__list">
         <li>
           <img class="photo__item" src="images/__item.jpg" alt="вид из окна поезда">
         </li>
@@ -115,15 +136,15 @@
     <section class="places">
       <ul class="list">
         <li class="place">
-          <h3 class="place__title">
+          <h2 class="place__title">
             Куршская коса
-          </h3>
+          </h2>
 
           <div class="place__website">
-            <p class="place__website_url-heading">
+            <p class="website-url">
               URL
             </p>
-            <a class="place__website_link link" target="_blank" href="http://park-kosa.ru">
+            <a class="website-link link" target="_blank" href="http://park-kosa.ru">
               park-kosa.ru
             </a>
           </div>
@@ -148,15 +169,16 @@
         </li>
 
         <li class="place">
-          <h3 class="place__title">
+          <h2 class="place__title">
             Кольский
-          </h3>
+          </h2>
 
           <div class="place__website">
-            <p class="place__website_url-heading">
+            <p class="website-url">
               URL
             </p>
-            <a class="place__website_link link" target="_blank" href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy">
+            <a class="website-link link" target="_blank"
+              href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy">
               National Geographic
             </a>
           </div>
@@ -179,14 +201,15 @@
         </li>
 
         <li class="place">
-          <h3 class="place__title">
+          <h2 class="place__title">
             Алтай
-          </h3>
+          </h2>
           <div class="place__website">
-            <p class="place__website_url-heading">
+            <p class="website-url">
               URL
             </p>
-            <a class="place__website_link link" target="_blank" href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822">
+            <a class="website-link link" target="_blank"
+              href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822">
               Facebook
             </a>
           </div>
@@ -210,14 +233,14 @@
         </li>
 
         <li class="place">
-          <h3 class="place__title">
+          <h2 class="place__title">
             Зимний Байкал
-          </h3>
+          </h2>
           <div class="place__website">
-            <p class="place__website_url-heading">
+            <p class="website-url">
               URL
             </p>
-            <a class="place__website_link link" target="_blank" href="https://vk.com/baikalmile">
+            <a class="website-link link" target="_blank" href="https://vk.com/baikalmile">
               https://vk.com/baikalmile
             </a>
           </div>
@@ -239,14 +262,14 @@
         </li>
 
         <li class="place">
-          <h3 class="place__title">
+          <h2 class="place__title">
             Карелия
-          </h3>
+          </h2>
           <div class="place__website">
-            <p class="place__website_url-heading">
+            <p class="website-url">
               URL
             </p>
-            <a class="place__website_link link" target="_blank" href="http://vodlozero.ru">
+            <a class="website-link link" target="_blank" href="http://vodlozero.ru">
               http://vodlozero.ru/
             </a>
           </div>
@@ -266,9 +289,8 @@
       </ul>
     </section>
 
-
+    <!-- разобраться с падингами -->
     <section class="cover">
-
       <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__link">
         <h2 class="cover__title">До Байкала «на собаках»</h2>
         <p class="cover__subtitle">По мотивам учебной темы о
@@ -279,7 +301,7 @@
   </main>
 
   <footer class="footer">
-    <ul class="footer__links">
+    <nav class="footer__links">
       <li class="footer__link">
         <a class="link" target="_blank" href="https://yandex.ru/maps">
           Карты
@@ -305,7 +327,7 @@
           Путешествия
         </a>
       </li>
-    </ul>
+    </nav>
     <p class="footer__copyright">
       © 2020. Шокин Игорь
     </p>
