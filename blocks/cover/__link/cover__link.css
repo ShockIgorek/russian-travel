@@ -12,7 +12,7 @@
     background-repeat: no-repeat;
     /* реализация hover эффекта */
     /* цвет фона в формате HEX #2A2C2F переведенный в RGBA */
-    background-color: rgba(42, 44, 47, 0);
+    background-color: rgba(42, 44, 47, .3);
     background-image: url(../../../images/compression/__background.jpg);
     background-blend-mode: multiply;
     transition: background-color .4s ease;
